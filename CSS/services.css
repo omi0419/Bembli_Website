@@ -1,0 +1,841 @@
+/* .Service-Image img {
+    position: relative;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+} */
+
+/* ================= History of Bembli Village ================= */
+
+/* ===============================
+   SERVICES HERO SECTION
+================================ */
+
+.services-banner {
+    position: relative;
+    top: -50px;
+    width: 100%;
+    margin-bottom: -50px;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.services-banner img {
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.services-text {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+
+    width: 40%;
+}
+
+.services-text h1 {
+    font-family: Georgia, serif;
+    font-size: 60px;
+    color: #075c3b;
+    margin-bottom: 20px;
+}
+
+.title-divider_lotus {
+    display: flex;
+    align-items: center;
+    width: 60%;
+    margin: 10px 0px 25px;
+}
+
+.title-divider_lotus span {
+    flex: 1;
+    width: 20px;
+    height: 2px;
+    background-color: #b7a06a;
+}
+
+.title-divider_lotus i {
+    color: #4d9b2a;
+    font-size: 24px;
+    margin: 0 10px;
+}
+
+.services-text h2 {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    line-height: 1.4;
+    color: #064d35;
+    margin-bottom: 20px;
+}
+
+.services-text p {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #222;
+}
+
+/*--------------- Service Owerwiere -------------*/
+
+/*----- Left side -----*/
+
+.services-overview {
+    width: 98%;
+    /* margin:35px auto; */
+    margin-left: 18px;
+    margin-top: -30px;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    /* gap:30px; */
+
+    background: #fff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, .08);
+}
+
+.overview-left {
+    width: 32%;
+    padding-right: 25px;
+    border-right: 1px solid #ddd;
+}
+
+.overview-left h2 {
+    color: #0B5D2A;
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+.overview-left i {
+    color: #0B5D2A;
+    margin-right: 8px;
+}
+
+.leaf-divider {
+    width: 250px;
+    height: 3px;
+    background: #0B5D2A;
+    border-radius: 20px;
+    /* margin:18px 0; */
+    margin-top: -5px;
+    margin-bottom: 20px;
+}
+
+.overview-left p {
+    line-height: 32px;
+    color: #555;
+    font-size: 18px;
+}
+
+/*----- Right side -----*/
+
+.overview-right {
+    width: 68%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.info-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px;
+    border-right: 2px solid #E5E5E5;
+    border-bottom: 2px solid #E5E5E5;
+
+}
+
+.info-box:nth-child(4),
+.info-box:nth-child(5),
+.info-box:nth-child(6) {
+    border-bottom: none;
+}
+
+.info-box:nth-child(3),
+.info-box:nth-child(6) {
+    border-right: none;
+}
+
+.icon {
+    width: 65px;
+    height: 65px;
+    background: #EAF7E7;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon i {
+    font-size: 28px;
+    color: #0B5D2A;
+}
+
+.info-box h3 {
+    color: #0B5D2A;
+    font-size: 22px;
+    margin-bottom: 6px;
+}
+
+.info-box p {
+    color: #555;
+    font-size: 16px;
+}
+
+/*--------------- Essential Services ---------------*/
+
+.essential-services {
+
+    width: 98%;
+    margin-left: 18px;
+    margin-top: 30px;
+
+}
+
+.service-heading {
+
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.service-heading h2 {
+
+    color: #0B5D2A;
+    font-size: 38px;
+
+}
+
+.title-divider {
+
+    width: 200px;
+    height: 3px;
+
+    background: #6A9C3A;
+
+    margin: 15px auto 25px;
+
+    border-radius: 50px;
+
+}
+
+
+.service-grid {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+
+}
+
+.service-card {
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    padding: 35px 25px;
+
+    text-align: center;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+
+    transition: .3s;
+
+}
+
+.service-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 12px 25px rgba(0, 0, 0, .15);
+
+}
+
+/*---------- Icon Circle ----------*/
+
+.icon-circle {
+
+    width: 75px;
+    height: 75px;
+
+    background: #EAF7E7;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    margin: 0 auto 20px;
+
+}
+
+.icon-circle i {
+
+    color: #0B5D2A;
+
+    font-size: 30px;
+
+}
+
+.service-card h3 {
+
+    color: #0B5D2A;
+
+    margin-bottom: 15px;
+
+}
+
+.service-card p {
+
+    color: #666;
+
+    line-height: 28px;
+
+}
+
+/*---------------- Development Services ----------------*/
+
+.development-services {
+
+    width: 98%;
+    /* background:#F8F6F0; */
+    margin-left: 18px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+
+/*======================================================
+      REQUIRED DOCUMENTS & CITIZEN GUIDELINES
+======================================================*/
+
+.documents-guidelines {
+    width: 98%;
+    /* margin:70px auto; */
+    margin-left: 18px;
+    margin-top: 10px;
+
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 10px;
+
+}
+
+/*======================
+    Documents Box
+======================*/
+
+.documents-box {
+
+    background: #fff;
+
+    padding: 30px;
+    padding-bottom: -40px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+
+}
+
+.documents-box h2 {
+
+    color: #0B5D2A;
+
+    font-size: 34px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+/*======================
+    Title Divider
+======================*/
+
+.title-divider {
+
+    width: 120px;
+
+    height: 3px;
+
+    background: #6A9C3A;
+
+    margin: 15px auto 25px;
+
+    border-radius: 50px;
+
+}
+
+/*======================
+    Documents Table
+======================*/
+
+.documents-box table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+
+}
+
+.documents-box th {
+
+    background: #0B5D2A;
+
+    color: white;
+
+    padding: 16px;
+
+    font-size: 17px;
+
+    text-align: left;
+
+}
+
+.documents-box td {
+
+    padding: 15px;
+
+    border: 1px solid #ddd;
+
+    font-size: 16px;
+
+}
+
+.documents-box tr:nth-child(even) {
+
+    background: #F8F8F8;
+
+}
+
+.documents-box tr:hover {
+
+    background: #EAF7E7;
+
+    transition: .3s;
+
+}
+
+/*======================
+    Citizen Guidelines
+======================*/
+
+.guidelines-box {
+
+    background: #fff;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, .08);
+
+}
+
+.guidelines-box h2 {
+
+    color: #0B5D2A;
+
+    font-size: 34px;
+
+    text-align: center;
+
+    margin-bottom: 10px;
+
+}
+
+.guidelines-box ul {
+
+    list-style: none;
+
+    margin-top: 5px;
+
+}
+
+.guidelines-box li {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 2px;
+
+    margin-bottom: 18px;
+
+    padding: 12px;
+
+    background: #F8FDF7;
+
+    border-left: 4px solid #0B5D2A;
+
+    border-radius: 8px;
+
+    line-height: 28px;
+
+    color: #555;
+
+    transition: .3s;
+
+}
+
+.guidelines-box li:hover {
+
+    background: #EAF7E7;
+
+    transform: translateX(5px);
+
+}
+
+.guidelines-box li i {
+
+    color: #0B5D2A;
+
+    font-size: 20px;
+
+    margin-top: 3px;
+
+    margin-right: 10px;
+
+}
+
+
+/*------------- Contact and Office Information ------------*/
+
+
+.contact-office {
+
+    width: 98%;
+    height: 280px;
+
+    /* margin:60px auto; */
+    margin-left: 18px;
+    margin-top: 10px;
+
+    background: #fff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 0 15px rgba(0, 0, 0, .08);
+
+    display: grid;
+
+    grid-template-columns: 25% 75%;
+
+    overflow: hidden;
+
+}
+
+/* Left Image */
+
+.office-img img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+}
+
+/* Right Side */
+
+.office-content {
+
+    padding: 20px 30px;
+
+}
+
+.office-content h2 {
+
+    text-align: center;
+
+    color: #0B5D2A;
+
+    font-size: 32px;
+
+}
+
+.office-grid {
+
+    margin-top: 25px;
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.office-box {
+
+    display: flex;
+
+    gap: 15px;
+
+    padding: 0 20px;
+
+    border-right: 1px solid #d8d8d8;
+
+}
+
+.last-box {
+
+    border-right: none;
+
+}
+
+.office-box i {
+
+    font-size: 32px;
+
+    color: #0B5D2A;
+
+    margin-top: 5px;
+
+}
+
+.office-box h3 {
+
+    color: #0B5D2A;
+
+    font-size: 22px;
+
+    margin-bottom: 8px;
+
+}
+
+.office-box p {
+
+    font-size: 18px;
+
+    color: #333;
+
+    line-height: 28px;
+
+}
+
+.office-box span {
+
+    font-size: 16px;
+
+    color: #555;
+
+}
+
+
+/*=========================
+    Commitment Banner
+=========================*/
+
+.commitment-banner {
+
+    width: 100%;
+
+    margin-top: 10px;
+
+    background: #0B5D2A;
+
+    border-radius: 15px;
+
+    padding: 22px 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 25px;
+
+}
+
+.banner-icon {
+
+    width: 70px;
+
+    height: 70px;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    flex-shrink: 0;
+
+}
+
+.banner-icon i {
+
+    font-size: 34px;
+
+    color: #0B5D2A;
+
+}
+
+.banner-content {
+
+    text-align: center;
+
+}
+
+.banner-content h2 {
+
+    color: #fff;
+
+    font-size: 30px;
+
+    margin-bottom: 8px;
+
+}
+
+.banner-content p {
+
+    color: #E8F5E9;
+
+    font-size: 18px;
+
+}
+
+/*=========================
+        Footer
+=========================*/
+
+/*========== FOOTER ==========*/
+
+.footer{
+
+    background:#044E1D;
+
+    color:#fff;
+
+    margin-top:5px;
+
+}
+
+.footer-container{
+
+    width:90%;
+
+    margin:auto;
+
+    /* padding:35px 0; */
+
+    display:grid;
+
+    grid-template-columns:1.5fr 1.3fr 1.3fr 1.5fr;
+
+}
+
+.footer-box{
+
+    padding:0 30px;
+
+    border-right:1px solid rgba(255,255,255,.2);
+
+}
+
+.footer-box:last-child{
+
+    border-right:none;
+
+}
+
+.footer-box img{
+
+    width:80px;
+
+    margin-bottom:12px;
+
+}
+
+.footer-box h3{
+
+    margin-bottom:18px;
+
+    font-size:26px;
+
+}
+
+.footer-box p{
+
+    color:#ececec;
+
+    line-height:28px;
+
+    font-size:17px;
+
+}
+
+.footer-box ul{
+
+    list-style:none;
+
+}
+
+.footer-box ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer-box ul li a{
+
+    color:#ececec;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer-box ul li a:hover{
+
+    color:#A5D6A7;
+
+}
+
+.footer-box i{
+
+    color:#fff;
+
+    width:22px;
+
+    margin-right:8px;
+
+}
+
+/* Bottom */
+
+.footer-bottom{
+
+    background:#06481b;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 5%;
+
+    font-size:16px;
+
+}

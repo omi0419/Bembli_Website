@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="logo">
+                <img src="IMAGES\logo.jpeg">
+                <h2 id="logoName" data-i18n="logoname">Grampanchayat Bembli</h2>
+            </div>
+
+            <nav>
+                <a href="index.html" data-i18n="home">Home</a>
+            <a href="about.html" data-i18n="about">About</a>
+            <a href="services.html" data-i18n="services">Services</a>
+            <a href="gallery.html" data-i18n="gallery" class="active">Gallery</a>
+            <a href="contact.html" data-i18n="contact">Contact</a>
+                
+                <div class="language-btn" id="langBtn">
+                <span class="flag"></span>
+                <span id="langText">मराठी</span>
+            </div>
+            </nav>
+        </header>
+        
+        <!-- ==================== Gallery Hero Section ====================== -->
+
+       <section class="gallery-banner">
+            <img src="IMAGES/gallery_hero_imge.jpeg" alt="Gallery Banner">
+
+            <div class="gallery-text">
+
+                <h1 data-i18n="Photo_Gallery">Village Photo Gallery</h1>
+
+                <div class="title-divider">
+                    <span></span>
+                    <i class="fa-solid fa-spa"></i>
+                    <span></span>
+                </div>
+
+                <p data-i18n="Photo_Gallery_desc">Explore the Beauty of Bembli Village</p>
+
+            </div>
+
+        </section>
+
+        <!-- ======================== Filter Buttons ========================= -->
+
+        <section class="gallery-filter">
+
+            <button data-i18n="all" class="filter-btn active" data-filter="all">All</button>
+            <button data-i18n="nature" class="filter-btn" data-filter="nature">Nature</button>
+            <button data-i18n="temple" class="filter-btn" data-filter="temple">Temple</button>
+            <button data-i18n="festival" class="filter-btn" data-filter="festival">Festivals</button>
+            <button data-i18n="village" class="filter-btn" data-filter="village">Village</button>
+
+        </section>
+
+        <!-- ======================== Gallery Grid Photos ========================= -->
+        
+        <section class="gallery-container">
+
+            <div class="gallery-item" data-filter="all">
+                <img src="IMAGES/gallery/image (76).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="all">
+                <img src="IMAGES/gallery/image (77).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="all">
+                <img src="IMAGES/gallery/image (78).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (29).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (30).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (31).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (22).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (23).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (39).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (74).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (41).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (41).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (24).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (25).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (32).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (35).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (37).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (36).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (34).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (27).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (26).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (52).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (51).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (46).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (4).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (5).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (6).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (14).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (10).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (11).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (8).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (1).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (2).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (13).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (15).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (16).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (19).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (55).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (58).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (18).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (20).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="temple">
+                <img src="IMAGES/gallery/image (21).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (7).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (9).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (42).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (43).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (44).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (45).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (47).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="village">
+                <img src="IMAGES/gallery/image (48).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (53).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (54).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (56).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (72).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="nature">
+                <img src="IMAGES/gallery/image (71).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (79).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (80).jpeg" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (60).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (62).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (57).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (64).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (66).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (69).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (70).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/image (63).png" onclick="openLightbox(this)">
+            </div>
+
+            <div class="gallery-item" data-filter="festival">
+                <img src="IMAGES/gallery/" onclick="openLightbox(this)">
+            </div>
+
+        </section>
+
+        <!-- ======================== LightBox Popup ========================= -->
+
+        <div id="lightbox">
+
+            <span class="close" onclick="closeLightbox()">&times;</span>
+
+            <img id="lightbox-img">
+
+            <button class="prev" onclick="prevImage()">&#10094;</button>
+
+            <button class="next" onclick="nextImage()">&#10095;</button>
+
+        </div>
+
+        <!-- ======================== Information Banner ========================= -->
+
+        <section class="gallery_banner">
+            <div class="banner-icon">
+                <i class="fa-solid fa-spa"></i>
+            </div>
+
+            <div class="banner-text">
+                <h2 data-i18n="quote_1">Every Picture Tells the Story of Bembli </h2>
+                <p data-i18n="quote_2">A glimpse of our culture, nature and traditions.</p>
+            </div>
+        </section>
+
+        <!-- ========================== Footer Section ========================== -->
+
+        <footer class="footer">
+
+            <div class="footer_bottom">
+
+                <p data-i18n="footer_desc">
+                    Contact :
+                    Grampanchayat Bembli,
+                    Taluka : Dharashiv,
+                    District : Dharashiv,
+                    Maharashtra - 413506 
+                </p>
+
+                <p data-i18n="footer_copyright">
+                    © 2026 Grampanchayat Bembli. All Rights Reserved.
+                </p>
+
+                <div class="slogan" data-i18n="slogan">
+                    Bembli — Honoring Tradition, Embracing Progress.
+                </div>
+
+            </div>
+
+        </footer>
+
+       
+        <script src="JS/Script.js"></script>
+
+        <script src="JS/GalleryTrans.js"></script>
+
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+
+    </body>
+</html>

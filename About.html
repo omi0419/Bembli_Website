@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/About.css">
+    </head>
+
+    <body>
+
+        <!----------------Navigation Bar------------------->
+        <header>
+
+            <div class="logo">
+                <img src="IMAGES\logo.jpeg">
+                <h2 id="logoName" data-i18n="logoname">Grampanchayat Bembli</h2>
+            </div>
+
+            <nav>
+                <a href="index.html" data-i18n="home">Home</a>
+                <a href="about.html" data-i18n="about" class="active">About</a>
+                <a href="services.html" data-i18n="services">Services</a>
+                <a href="gallery.html" data-i18n="gallery">Gallery</a>
+                <a href="contact.html" data-i18n="contact">Contact</a>
+
+                <div class="language-btn" id="langBtn" >
+                    <span class="flag"></span>
+                    <span id="langText">मराठी</span>
+                </div>
+            </nav>
+
+        </header>
+
+        <!-- ================= History of Bembli Village ================= -->
+
+        <section class="history-section">
+
+            <img src="IMAGES/history_img.jpeg" alt="Bembli Village">
+
+            <div class="history-content">
+
+                <h1 data-i18n="history_img_heading">
+                    History of Bembli Village
+                </h1>
+
+                <div class="history-divider"></div>
+                
+                <p data-i18n="history_img_desc">
+                    Bembli is a well-known village located in Dharashiv Taluka,
+                    Dharashiv District, Maharashtra, India. The village has long
+                    been recognized for its agricultural heritage, peaceful
+                    surroundings, and close-knit community. Over the years,
+                    Bembli has developed steadily while preserving its traditional
+                    values and cultural identity.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!------------- HISTORY SECTION ------------->
+
+        <section class="history-container">
+
+            <div class="journey">
+
+                <h2>
+                    <i class="fa-solid fa-scroll journey-icon"></i>
+                    <span data-i18n="Journey">Our Village Journey</span>
+                </h2>
+
+
+                <div class="journey-box">
+
+                    <!-- <div class="icon">🌾</div> -->
+                    <div class="icon"><i class="fa-solid fa-seedling agriculture-icon"></i></div>
+
+                    <p data-i18n="Journey_paragraph_1">
+
+                        Agriculture has always been the backbone of the village economy. The fertile land and the hard work
+                        of local farmers have played a significant role in the growth and prosperity of the village.
+
+                    </p>
+
+                </div>
+
+                <hr class="hr_line">
+
+                <div class="journey-box">
+
+                    <div class="icon"><i class="fa-solid fa-users community-icon"></i></div>
+
+                    <p data-i18n="Journey_paragraph_2">
+
+                        Along with farming, the people of Bembli actively participate in
+                        social, cultural and religious activities that strengthen
+                        community bonds.
+
+                    </p>
+
+                </div>
+
+                <hr class="hr_line">
+
+                <div class="journey-box">
+
+                    <div class="icon"><i class="fa-solid fa-chart-simple population-icon "></i></div>
+
+                    <p data-i18n="Journey_paragraph_3">
+
+                        According to the Census records, Bembli has a
+                        population of 11,339 people living in 2,188
+                        households, covering an area of approximately 20.88 square kilometres (2, 087.69 hectares).
+                        The village is located about 25 kilometres from
+                        Tuljapur, making it well connected to nearby
+                        towns and essential services.
+
+                    </p>
+
+                </div>
+
+                <hr class="hr_line">
+
+                <div class="journey-box">
+
+                    <div class="icon"><i class="fa-solid fa-building-columns  government-icon"></i></div>
+
+                    <p data-i18n="Journey_paragraph_4">
+
+                        Today, Bembli continues to progress with
+                        improved educational facilities, infrastructure
+                        public services, and community development
+                        initiatives while maintaining its rich traditions and rural heritage. 
+                        The village stands as a symbol of unity, hard work, and continuous development.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            
+            <div class="glance">
+
+                <h2>
+                    <i class="fa-solid fa-circle-info"></i>
+                    <span data-i18n="Glance">Bembli at a Glance</span>
+                </h2>
+                
+                <table>
+
+                    <tr>
+                        <td><i class="fa-solid fa-location-dot"></i> <span data-i18n="dist">District</span></td>
+                        <td data-i18n="dist_name">Dharashiv</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-user"></i> <span data-i18n="taluka">Taluka</span></td>
+                        <td data-i18n="taluka_name">Dharashiv</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-map"></i> <span data-i18n="state">State</span></td>
+                        <td data-i18n="state_name">Maharashtra</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-users"></i> <span data-i18n="population">Population (2011)</span></td>
+                        <td data-i18n="population_no">11,339</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-house"></i> <span data-i18n="household">Households (2011)</span></td>
+                        <td data-i18n="household_no">2,188</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-vector-square"></i> <span data-i18n="area">Area</span></td>
+                        <td data-i18n="area_no">20.88 sq km (2,087.69 hectares)</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-location-pin"></i> <span data-i18n="Town">Nearest Town</span></td>
+                        <td data-i18n="near_town">Tuljapur</td>
+                    </tr>
+
+                    <tr>
+                        <td><i class="fa-solid fa-id-card"></i> <span data-i18n="census">Census Village Code</span></td>
+                        <td data-i18n="census_code">561491</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </section>
+
+        <!------------------ Special section------------------>
+
+        <section class="special-section">
+
+            <h2>
+                <i class="fa-solid fa-star gold"></i> 
+                <span data-i18n="special">What Makes Bembli Special ?</span>
+
+            </h2>
+
+            <div class="special-container">
+
+                <div class="special-box">
+                    <i class="fa-solid fa-seedling"></i>
+                    <h3 data-i18n="heritage">Agriculture heritage</h3>
+                    <p data-i18n="heritage_desc">
+                        Fertile land and dedicated farmers from the strength of our village.
+                    </p>
+                </div>
+
+
+                <div class="special-box">
+                    <i class="fa-solid fa-users"></i>
+                    <h3 data-i18n="community">Strong Community</h3>
+                    <p data-i18n="community_desc">A close-knit community living together in harmony and unity.</p>
+                </div>
+
+
+                <div class="special-box">
+                    <i class="fa-solid fa-place-of-worship"></i> 
+                    <h3 data-i18n="Rich">Rich Culture</h3>
+                    <p data-i18n="Rich_desc">Active participation in cultural, social and religious activities.</p>
+                </div>
+
+
+                <div class="special-box">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <h3 data-i18n="Future">Progressive Future</h3>
+                    <p data-i18n="Future_desc">Focus on education, infrastructure and community development.</p>
+                </div>
+
+
+                <div class="special-box">
+                    <i class="fa-solid fa-tree"></i>
+                    <h3 data-i18n="nature">peaceful Nature</h3>
+                    <p data-i18n="nature_desc">Clean surroundings and natural beauty make Bembli a better place to live.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!---------------Village Life At A Glance--------------->
+
+        <section class="village-life">
+
+            <h2>
+                <i class="fa-solid fa-earth-asia"></i>
+                <span data-i18n="village_life">Village Life at a Glance</span>
+            </h2>
+
+            <!-- <hr id="village_line"> -->
+
+            <div class="life-container">
+
+                <!-- Agriculture -->
+
+                <div class="life-card">
+
+                    <h3 class="agri-title">
+                        <i class="fa-solid fa-seedling"></i>
+                        <span data-i18n="Agri">Agriculture</span>
+                    </h3>
+                    <img src="IMAGES/agriculture.jpg">
+                    <ul>
+                        <li data-i18n="agri_1">Main Crops : Sugarcane</li>
+                        <li data-i18n="agri_2">Wheat, Jowar & Bajra</li>
+                        <li data-i18n="agri_3">Modern Farming</li>
+                        <li data-i18n="agri_4">Wells & Canal Irrigation</li>
+                    </ul>
+
+                </div>
+
+                <!-- Festivals -->
+
+                <div class="life-card">
+
+                    <h3 class="festival-title">
+                        <i class="fa-solid fa-calendar-days"></i>
+                        <span data-i18n="festival_Culture">Festivals & Culture</span>
+                    </h3>
+                    <img src="IMAGES/festival.jpeg">
+                    <ul>
+                        <li data-i18n="festival_1">Mahashivratri</li>
+                        <li data-i18n="festival_2">Ganesh Utsav</li>
+                        <li data-i18n="festival_3">Diwali</li>
+                        <li data-i18n="festival_4">Holi Festival</li>
+                    </ul>
+
+                </div>
+
+                <!-- Famous Places -->
+
+                <div class="life-card">
+
+                    <h3 class="place-title">
+                        <i class="fa-solid fa-gopuram"></i>
+                        <span data-i18n="Famous_Places">Police Facilities</span> 
+                    </h3>
+                    <img src="IMAGES/police_station.png">
+                    <ul>
+                        <li data-i18n="famous_1">Nearby Police Station</li>
+                        <li data-i18n="famous_2">Emergency Assistance</li>
+                        <li data-i18n="famous_3">Public Safety Service</li>
+                        <li data-i18n="famous_4">Law & Order Support</li>
+                    </ul>
+
+                </div>
+
+                <!-- Education -->
+
+                <div class="life-card">
+
+                    <h3 class="education-title">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <span data-i18n="Education">Education</span>
+                    </h3>
+                    <img src="IMAGES/school.png">
+                    <ul>
+                        <li data-i18n="edu_1">ZP School</li>
+                        <li data-i18n="edu_2">High School</li>
+                        <li data-i18n="edu_3">Anganwadi</li>
+                        <li data-i18n="edu_4">Library Facility</li>
+                    </ul>
+
+                </div>
+
+                <!-- Health -->
+
+                <div class="life-card">
+
+                    <h3 class="health-title">
+                        <i class="fa-solid fa-house-medical"></i>
+                        <span data-i18n="Health_Facilities">Health Facilities</span>
+                    </h3>
+                    <img src="IMAGES/hospital.png">
+                    <ul>
+                        <li data-i18n="health_1">Primary Health Centre</li>
+                        <li data-i18n="health_2">Private Clinics</li>
+                        <li data-i18n="health_3">Ambulance</li>
+                        <li data-i18n="health_4">Medical Stores</li>
+                    </ul>
+
+                </div>
+
+                <!-- Occupation -->
+
+                <div class="life-card">
+
+                    <h3 class="occupation-title">
+                        <i class="fa-solid fa-tractor"></i>
+                        <span data-i18n="Occupation">Occupation</span>
+                    </h3>
+                    <img src="IMAGES/tractor.jpg">
+                    <ul>
+                        <li data-i18n="occu_1">Agriculture</li>
+                        <li data-i18n="occu_2">Dairy Farming</li>
+                        <li data-i18n="occu_3">Business</li>
+                        <li data-i18n="occu_4">Government Jobs</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+
+        <!----------------Photo Gallery---------------->
+
+        <section class="photo-gallery">
+
+            <h2>
+                <i class="fa-solid fa-camera"></i>
+                <span data-i18n="photo_gallery">Photo Gallery</span>
+            </h2>
+
+            <div class="gallery-container">
+
+                <img src="IMAGES/gallery1.png" onclick="openImage(this.src)">
+
+                <img src="IMAGES/gallery2.png" onclick="openImage(this.src)">
+
+                <img src="IMAGES/gallery3.jpeg" onclick="openImage(this.src)">
+
+                <img src="IMAGES/gallery4.png" onclick="openImage(this.src)">
+
+                <img src="IMAGES/gallery5.png" onclick="openImage(this.src)">
+
+                <img src="IMAGES/gallery6.png" onclick="openImage(this.src)">
+
+            </div>
+
+        </section>
+
+        <!-- Lightbox -->
+
+        <div class="lightbox" id="lightbox">
+
+            <span class="close">&times;</span>
+
+            <img class="lightbox-img" id="lightbox-img">
+
+        </div>
+
+
+        <!-------------------- Location Section & Visit Section -------------------->
+
+        <section class="location_section">
+
+            <!------------ Left Side ------------>
+            <div class="location_box">
+
+                <h2>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Location
+                </h2>
+
+                <div class="map">
+
+                    <iframe src="https://www.google.com/maps?q=Bembli,+Dharashiv,+Maharashtra&output=embed" loading="lazy">
+                    </iframe>
+
+                </div>
+
+            </div>
+
+
+            <!----------- Right Side ------------->
+
+            <div class="visit_box">
+
+                <h2>
+                    <i class="fa-solid fa-star golden"></i>
+                    <SPan data-i18n="Visit_Bembli">Why Visit Bembli?</SPan>
+                </h2>
+
+                <div class="visit_container">
+
+                    <div class="visit_card">
+                        <i class="fa-solid fa-tree green"></i>
+                        <h3 data-i18n="Beautiful_Nature">Beautiful Nature</h3>
+                    </div>
+
+                    <div class="visit_card">
+                        <i class="fa-solid fa-landmark orange"></i>
+                        <h3 data-i18n="Historic_Temples">Historic Temples</h3>
+                    </div>
+
+                    <div class="visit_card">
+                        <i class="fa-solid fa-leaf darkgreen"></i>
+                        <h3 data-i18n="Agriculture_Farming">Agriculture & Farming</h3>
+                    </div>
+
+                    <div class="visit_card">
+                        <i class="fa-solid fa-users red"></i>
+                        <h3 data-i18n="Tradition_Culture">Tradition & Culture</h3>
+                    </div>
+
+                    <div class="visit_card">
+                        <i class="fa-solid fa-user-group brown"></i>
+                        <h3 data-i18n="Friendly_People">Friendly People</h3>
+                    </div>
+
+                    <div class="visit_card">
+                        <i class="fa-solid fa-seedling green2"></i>
+                        <h3 data-i18n="Peaceful_Environment">Peaceful Environment</h3>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!------------------------ Footer Section ------------------------>
+
+        <footer class="footer">
+
+            <!----- Quote Banner ----->
+
+            <div class="footer_banner">
+
+                <div class="quote">
+
+                    <i class="fa-solid fa-quote-left"></i>
+
+                    <h2 data-i18n="footer_quote">Bembli – Where Tradition Meets Progress.</h2>
+
+                </div>
+
+            </div>
+
+
+            <!----- Footer Bottom ----->
+
+            <div class="footer_bottom">
+
+                <p data-i18n="footer_address">
+                    Contact :
+                    Grampanchayat Bembli,
+                    Taluka : Dharashiv,
+                    District : Dharashiv,
+                    Maharashtra - 413506
+                </p>
+
+                <p data-i18n="footer_copyright">
+                    © 2026 Grampanchayat Bembli. All Rights Reserved.
+                </p>
+
+                <div class="slogan" data-i18n="slogan">
+                    Bembli — Honoring Tradition, Embracing Progress.
+                </div>
+
+            </div>
+
+        </footer>
+
+        <script src="JS/Script.js"></script>
+
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+
+        <script src="JS/AboutTrans.js"></script>
+
+
+    </body>
+
+</html>

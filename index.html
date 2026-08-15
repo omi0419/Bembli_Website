@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--------------- Font Awesome Icons ---------------------->
+        <title>Grampanchayat Bembli</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header>
+
+            <div class="logo">
+                <img src="IMAGES\logo.jpeg">
+                <h2 id="logoName" data-i18n="logoname">Grampanchayat Bembli</h2>
+            </div>
+
+            <nav>
+                <a href="index.html" data-i18n="home" class="active">Home</a>
+                <a href="about.html" data-i18n="about">About</a>
+                <a href="services.html" data-i18n="services">Services</a>
+                <a href="gallery.html" data-i18n="gallery">Gallery</a>
+                <a href="contact.html" data-i18n="contact">Contact</a>
+
+                <div class="language-btn" id="langBtn" >
+                    <span class="flag"></span>
+                    <span id="langText">मराठी</span>
+                </div>
+            </nav>
+
+        </header>
+
+        <!--==================== Welcome templete ==================-->
+
+        <section class="welcome_temp">
+
+            <img src="IMAGES/sD1.jpeg" alt="Village Background" class="bg_img">
+
+            <h1 id="welcome" data-i18n="welcome">Welcome to Bembli Village</h1>
+            <hr id="line">
+            <h2 id="welcome_text" data-i18n="Grampanchyat">Grampanchayat Bembli</h2>
+            <p id="welcome_p" data-i18n="community" >Connecting Community & Progress</p>
+            <a href="about.html" class="wel_btn" data-i18n="learn_Btn">Learn About Us</a>
+            <a href="services.html" class="wel_btn services_btn" data-i18n="village_service">Village Services</a>
+            <a href="#news" class="wel_btn updates_btn" onclick="openNewsPopup()" data-i18n="latest_update">Latest Updates</a>
+        
+        </section>
+        
+        <section class="cards">
+
+            <div id="d1">
+                <h2 class="heading" data-i18n="about_bembli" >About Bembli Village</h2>
+                <pre data-i18n="about_bembli_desc">Discover the history and culture <br>of our village.</pre>
+                <button  onclick="window.location.href='about.html'" class="learn_about_button" data-i18n="about_lern_btn">Learn More</button>
+            </div>
+
+
+            <div id="d2">
+                <h2 class="heading" data-i18n="Gov_Schemes">Government Schemes</h2>
+                <pre data-i18n="Gov_Schemes_desc">Details on welfare<br>programs initiatives.</pre>
+                <button class="learn_btn" data-i18n="Government_lern_btn" onclick="openGovSchemes()">Learn More</button>
+            </div>
+
+
+            <div id="d3">
+                <h2 class="heading" data-i18n="photo_Gallery">Photo Gallery</h2>
+                <pre data-i18n="photo_Gallery_desc">View the beauty events<br>of Bembli.</pre>
+                <button onclick="window.location.href='gallery.html'" class="learn_btn" data-i18n="photo_leran_btn">Learn More</button>
+            </div>
+
+        </section>
+
+
+     <!--======================== quick-news-section ====================-->
+
+        <section class="quick-news-section">
+
+            <!-- News & Announcements -->
+            <div class="news-container">
+
+                <h2 data-i18n="News_Announcements">
+                    News & Announcements
+                </h2>
+
+                <!-- Latest News 1 -->
+                <div class="news-item">
+
+                    <div class="news-content">
+
+                        <h3 id="newsTitle1">
+                            Loading...
+                        </h3>
+
+                        <p id="newsDate1">
+                            Loading...
+                        </p>
+
+                    </div>
+
+                    <a href="#" id="newsReadMore1">
+                        Read More ❯
+                    </a>
+
+                </div>
+
+
+                <!-- Latest News 2 -->
+                <div class="news-item">
+
+                    <div class="news-content">
+
+                        <h3 id="newsTitle2">
+                            Loading...
+                        </h3>
+
+                        <p id="newsDate2">
+                            Loading...
+                        </p>
+
+                    </div>
+
+                    <a href="#" id="newsReadMore2">
+                        Read More ❯
+                    </a>
+
+                </div>
+
+
+                <!-- View More -->
+                <button
+                    id="news-btn"
+                    class="view-more"
+                    onclick="openNewsPopup()">
+
+                    View More
+
+                </button>
+
+            </div>
+
+            <!-- Quick Links -->
+            <div class="quick-box">
+                <h2 class="title" data-i18n="Quick_Links">Quick Links</h2>
+                <div class="links">
+
+                    <div class="link-item link-box" onclick="openPopup()">
+                        <i class="fa-solid fa-user"></i>
+                        <span data-i18n="Quick_Links_1">Sarpanch & Members</span>
+                    </div>
+
+                    <div class="link-item link-box" onclick="openProjectPopup()">
+                        <i class="fa-solid fa-road"></i>
+                        <span data-i18n="Quick_Links_2">Development Projects</span>
+                    </div>
+
+                    <div class="link-item link-box" onclick="openMapPopup()">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span data-i18n="Quick_Links_3">Village Map</span>
+                    </div>
+
+                    <div class="link-item link-box" onclick="openComplaintPopup()">
+                        <i class="fa-solid fa-file-circle-exclamation"></i>
+                        <span data-i18n="Quick_Links_4">
+                            तक्रार नोंदणी
+                        </span>
+                    </div>
+            </div>
+        
+        </section>
+
+        <!--======================== temple-and-event ============================-->
+
+        <section class="temple-and-event">
+
+            <!-------------------temple image ------------------>
+
+            <section class="temple-section">
+                <img src="IMAGES/TEMPLE.jpeg">
+            </section>
+
+            <!------------------Upcoming Events ---------------->
+
+            <div class="events-box">
+
+                <div class="events-title">
+                    <span data-i18n="Upcoming_Events">Upcoming Events</span>
+                </div>
+
+                <div class="event-list">
+
+                    <div class="event-item">
+                        <span class="arrow">▶</span>
+                        <p data-i18n="Event_1">Health Camp on May 20th</p>
+                    </div>
+
+                    <div class="event-item">
+                        <span class="arrow">▶</span>
+                        <p data-i18n="Event_2">Tree Plantation Drive in June</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--====================== footer ===================== -->
+
+        <footer class="footer">
+
+            <!----- Quote Banner ----->
+
+            <div class="footer_banner">
+
+                <div class="quote">
+
+                    <i class="fa-solid fa-quote-left"></i>
+
+                    <h2 data-i18n="footer_quote">Bembli – A Village of Stories, A Home of Hearts.</h2>
+
+                </div>
+
+            </div>
+
+
+            <!----- Footer Bottom ----->
+
+            <div class="footer_bottom">
+
+                <p data-i18n="footer_desc">
+                    Contact :
+                    Grampanchayat Bembli,
+                    Taluka : Dharashiv,
+                    District : Dharashiv,
+                    Maharashtra - 413506
+                </p>
+
+                <p data-i18n="footer_copyright">
+                    © 2026 Grampanchayat Bembli. All Rights Reserved.
+                </p>
+
+                <div class="slogan" data-i18n="slogan">
+                    Bembli — Honoring Tradition, Embracing Progress.
+                </div>
+
+            </div>
+
+        </footer>
+
+
+        
+        <!--================= Government Schemes Popup =====================-->
+
+        <div id="govSchemePopup" class="gov-popup">
+
+            <div class="gov-popup-content">
+
+                <button class="gov-popup-close" onclick="closeGovSchemes()">
+                    &times;
+                </button>
+
+                <h2>सरकारी योजना</h2>
+
+                <p class="gov-popup-intro">
+                    ग्रामपंचायतीमार्फत नागरिकांसाठी उपलब्ध असलेल्या
+                    विविध सरकारी योजनांची माहिती.
+                </p>
+
+                <div class="scheme-list">
+
+                    <div class="scheme-item">
+                        <h3>प्रधानमंत्री आवास योजना</h3>
+                        <p>
+                            आर्थिकदृष्ट्या दुर्बल व गरजू कुटुंबांना
+                            पक्के घर उपलब्ध करून देण्यासाठी ही योजना आहे.
+                        </p>
+                    </div>
+
+                    <div class="scheme-item">
+                        <h3>स्वच्छ भारत मिशन</h3>
+                        <p>
+                            स्वच्छता, शौचालय सुविधा आणि स्वच्छ गाव
+                            निर्माण करण्यासाठी राबविण्यात येणारी योजना.
+                        </p>
+                    </div>
+
+                    <div class="scheme-item">
+                        <h3>जल जीवन मिशन</h3>
+                        <p>
+                            प्रत्येक ग्रामीण कुटुंबाला नळाद्वारे
+                            सुरक्षित आणि पुरेसे पिण्याचे पाणी उपलब्ध करून देणे.
+                        </p>
+                    </div>
+
+                    <div class="scheme-item">
+                        <h3>मनरेगा</h3>
+                        <p>
+                            ग्रामीण भागातील नागरिकांना रोजगाराची संधी
+                            उपलब्ध करून देण्यासाठी ही योजना राबविली जाते.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!--================= News And Annocument Popup =====================-->
+
+        <div id="newsPopup" class="news-popup">
+
+            <div class="news-popup-content">
+
+                <button class="close-news" onclick="closeNewsPopup()">
+                    &times;
+                </button>
+
+                <div class="news-popup-header">
+                    <h2>News & Announcements</h2>
+                    <p>Latest updates from Bembli Village</p>
+                </div>
+
+                <div class="news-list" id="newsList">
+                    <!-- News will load here dynamically -->
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ================= Complaint Popup ================= -->
+
+        <div id="complaintPopup" class="complaint-popup">
+
+            <div class="complaint-popup-content">
+
+                <!-- Close Button -->
+                <button class="close-complaint" onclick="closeComplaintPopup()">
+                    &times;
+                </button>
+
+                <h2>
+                    <i class="fa-solid fa-file-circle-exclamation"></i>
+                    तक्रार नोंदणी
+                </h2>
+
+                <form id="complaintForm">
+
+                    <!-- Name -->
+                    <div class="form-group">
+                        <label for="complaintName">
+                            नाव
+                        </label>
+
+                        <input
+                            type="text"
+                            id="complaintName"
+                            name="name"
+                            placeholder="तुमचे नाव टाका"
+                            required>
+                    </div>
+
+                    <!-- Mobile -->
+                    <div class="form-group">
+                        <label for="complaintMobile">
+                            मोबाईल नंबर
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="complaintMobile"
+                            name="mobile"
+                            placeholder="तुमचा मोबाईल नंबर टाका"
+                            maxlength="10"
+                            required>
+                    </div>
+
+
+                    <!-- Complaint Type -->
+                    <div class="form-group">
+                        <label for="complaintType">
+                            तक्रारीचा प्रकार
+                        </label>
+
+                        <select
+                            id="complaintType"
+                            name="complaint_type"
+                            required>
+
+                            <option value="">
+                                तक्रारीचा प्रकार निवडा
+                            </option>
+
+                            <option value="पाणीपुरवठा">
+                                पाणीपुरवठा
+                            </option>
+
+                            <option value="रस्ते">
+                                रस्ते
+                            </option>
+
+                            <option value="स्ट्रीट लाईट">
+                                स्ट्रीट लाईट
+                            </option>
+
+                            <option value="स्वच्छता">
+                                स्वच्छता
+                            </option>
+
+                            <option value="ग्रामपंचायत सेवा">
+                                ग्रामपंचायत सेवा
+                            </option>
+
+                            <option value="इतर">
+                                इतर
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <!-- Complaint Subject -->
+                    <div class="form-group">
+                        <label for="complaintSubject">
+                            तक्रारीचे शीर्षक
+                        </label>
+
+                        <input
+                            type="text"
+                            id="complaintSubject"
+                            name="subject"
+                            placeholder="तक्रारीचे शीर्षक टाका"
+                            required>
+                    </div>
+
+
+                    <!-- Complaint Description -->
+                    <div class="form-group">
+                        <label for="complaintDescription">
+                            तक्रारीचे वर्णन
+                        </label>
+
+                        <textarea
+                            id="complaintDescription"
+                            name="description"
+                            rows="5"
+                            placeholder="तुमची तक्रार सविस्तर लिहा..."
+                            required></textarea>
+                    </div>
+
+
+                    <!-- Submit -->
+                    <button
+                        type="submit"
+                        class="complaint-submit-btn">
+
+                        <i class="fa-solid fa-paper-plane"></i>
+                        तक्रार नोंदवा
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!--================= Sarpanch & Members Popup =====================-->
+
+        <div class="popup" id="popup">
+                
+            <div class="popup-content">
+
+                <div class="popup-header">
+                    <h2 data-i18n="sarpanch_popup">Sarpanch & Members</h2>
+                    <span class="close" onclick="closePopup()">&times;</span>
+                </div>
+
+                <div class="table-container">
+
+                    <table>
+
+                        <tr>
+                            <th data-i18n="post">Post</th>
+                            <th data-i18n="name">Name</th>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="sarpanch">Sarpanch</td>
+                            <td data-i18n="Sarpanch">Mrs. Fatima Sattar Shaikh</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="Dep_sarpanch">Deputy Sarpanch</td>
+                            <td data-i18n="Deputy_Sarpanch">Mr. Nitesh Shivaji Ingale</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="GM">GramSevak</td>
+                            <td data-i18n="GramSevak">Mr. Kevalram K. A</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M1">Member</td>
+                            <td data-i18n="m1">Mr. Balasaheb Datoba Kanase</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M2">Member</td>
+                            <td data-i18n="m2">Mr. Anil Shashikant Nalegaonkar</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M3">Member</td>
+                            <td data-i18n="m3">Mrs. Manisha Nagnath Patil</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M4">Member</td>
+                            <td data-i18n="m4">Mr. Nawab Abuzarkhan Pathan</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M5">Member</td>
+                            <td data-i18n="m5">Ms. Vidya Raghunath Mane</td>
+                        </tr>
+
+                        
+                        <tr>
+                            <td data-i18n="M6">Member</td>
+                            <td data-i18n="m6">Mr. Jidashaha Huseinshaha Fakir</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M7">Member</td>
+                            <td data-i18n="m7">Mrs. Sufiyabi Ahmed Shaikh</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M8">Member</td>
+                            <td data-i18n="m8">Mr. Siddik Ibrahim Boudiwale</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M9">Member</td>
+                            <td data-i18n="m9">Mrs. Ashwini Maruti Kaspate</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M10">Member</td>
+                            <td data-i18n="m10">Mr. Mohan Vasantrao Khapare</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M11">Member</td>
+                            <td data-i18n="m11">Mrs. Yasmin Moin Khan Pathan</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M12">Member</td>
+                            <td data-i18n="m12">Mr. Annasaheb Pralhad Kasbe</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M13">Member</td>
+                            <td data-i18n="m13">Mrs. Nandabai Rajabhau Rasal</td>
+                        </tr>
+
+                        <tr>
+                            <td data-i18n="M14">Member</td>
+                            <td data-i18n="m14">Mrs. Sushila Mahadev Gavade</td>
+                        </tr>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>           
+
+
+       <!--================ Development Projects Popup ================-->
+
+        <div class="project-popup" id="projectPopup">
+            <div class="project-popup-content">
+
+                <div class="project-popup-header">
+                    <h2 data-i18n="Development_Projects">
+                        <i class="fa-solid fa-road"></i>
+                        Development Projects
+                    </h2>
+                    <span class="project-close" onclick="closeProjectPopup()">
+                        &times;
+                    </span>
+                </div>
+
+
+                <div class="project-container">
+
+
+                    <!-- Project 1 -->
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-road"></i>
+
+                        </div>
+
+                        <h3 data-i18n="project_road">Road Development</h3>
+
+                        <p data-i18n="project_road_desc">
+                            Construction and maintenance of
+                            internal village roads.
+                        </p>
+
+                        <span class="completed" data-i18n="project_road_status">
+                            Completed
+                        </span>
+
+                    </div>
+
+                    <!-- Project 2 -->
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-droplet"></i>
+
+                        </div>
+
+                        <h3 data-i18n="project_water">Water Supply</h3>
+
+                        <p data-i18n="project_water_desc">
+                            Improvement of drinking water
+                            pipelines and storage facilities.
+                        </p>
+
+                        <span class="ongoing" data-i18n="project_water_status">
+                            Ongoing
+                        </span>
+
+                    </div>
+
+
+                    <!-- Project 3 -->
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-lightbulb"></i>
+
+                        </div>
+
+                        <h3 data-i18n="project_led">LED Street Lights</h3>
+
+                        <p data-i18n="project_led_desc">
+                            Installation of energy-efficient
+                            street lights.
+                        </p>
+
+                        <span class="completed" data-i18n="project_led_status">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <!-- Project 4 -->
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-tree"></i>
+
+                        </div>
+
+                        <h3 data-i18n="project_tree">Tree Plantation</h3>
+
+                        <p data-i18n="project_tree_desc">
+                            Plantation of trees along roads
+                            and public places.
+                        </p>
+
+                        <span class="ongoing" data-i18n="project_tree_status">
+                            Ongoing
+                        </span>
+
+                    </div>
+
+
+                    <!-- Project 5 -->
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-school"></i>
+
+                        </div>
+
+                        <h3 data-i18n="project_school">School Renovation</h3>
+
+                        <p data-i18n="project_school_desc">
+                            Renovation and maintenance
+                            of village schools.
+                        </p>
+
+                        <span class="completed" data-i18n="project_school_status">
+                            Completed
+                        </span>
+
+                    </div>
+
+
+                    <!-- Project 6 -->
+
+                    <div class="project-card">
+
+                        <div class="project-icon">
+
+                            <i class="fa-solid fa-seedling"></i>
+
+                        </div>
+
+                        <h3 data-i18n="project_clean">Clean Village Mission</h3>
+
+                        <p data-i18n="project_clean_desc">
+                            Cleanliness drive and
+                            sanitation awareness.
+                        </p>
+
+                        <span class="ongoing" data-i18n="project_clean_status">
+                            Ongoing
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!--================ Village Map Popup ================-->
+
+
+        <div class="map-popup" id="mapPopup">
+
+            <div class="map-popup-content">
+
+                <div class="map-header">
+
+                    <h2 data-i18n="village_map">Village Map – Bembli</h2>
+
+                    <span class="map-close" onclick="closeMapPopup()">
+                        &times;
+                    </span>
+
+                </div>
+
+                <div class="map-body">
+
+                    <img src="images/bembli-map.jpeg" alt="Village Map">
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <script>
+
+            document.addEventListener("DOMContentLoaded", function () {
+
+                fetch("get_latest_news.php")
+
+                    .then(response => response.json())
+
+                    .then(news => {
+
+                        if (news.length > 0) {
+
+                            document.getElementById("newsTitle1").textContent =
+                                news[0].title;
+
+                            document.getElementById("newsDate1").textContent =
+                                formatNewsDate(news[0].news_date);
+
+                            document.getElementById("newsReadMore1").onclick = function () {
+
+                                showNewsDetails(news[0]);
+
+                                return false;
+                            };
+
+                        }
+
+
+                        if (news.length > 1) {
+
+                            document.getElementById("newsTitle2").textContent =
+                                news[1].title;
+
+                            document.getElementById("newsDate2").textContent =
+                                formatNewsDate(news[1].news_date);
+
+                            document.getElementById("newsReadMore2").onclick = function () {
+
+                                showNewsDetails(news[1]);
+
+                                return false;
+                            };
+
+                        }
+
+                    })
+
+                    .catch(error => {
+
+                        console.error("News loading error:", error);
+
+                    });
+
+            });
+
+
+            function formatNewsDate(dateString) {
+
+                const date = new Date(dateString);
+
+                return date.toLocaleDateString("en-IN", {
+
+                    day: "2-digit",
+                    month: "long",
+                    year: "numeric"
+
+                });
+
+            }
+
+
+            function showNewsDetails(news) {
+
+                alert(
+                    news.title +
+                    "\n\n" +
+                    news.description
+                );
+
+            }
+
+        </script>
+
+        <script src="JS/Script.js"></script>
+
+        <script src="https://unpkg.com/i18next/dist/umd/i18next.min.js"></script>
+
+        <script src="JS/Translate.js"></script>
+
+    </body>
+
+</html>
