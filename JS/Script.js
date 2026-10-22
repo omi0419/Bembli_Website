@@ -1,29 +1,29 @@
 
 //============= Service Image Poppup ==============\\
 
-// function openImage(image){
+function openImage(image){
 
-//     document.getElementById("lightbox").style.display="flex";
+    document.getElementById("lightbox").style.display="flex";
 
-//     document.getElementById("lightbox-img").src=image;
+    document.getElementById("lightbox-img").src=image;
 
-// }
+}
 
-// document.querySelector(".close").onclick=function(){
+document.querySelector(".close").onclick=function(){
 
-//     document.getElementById("lightbox").style.display="none";
+    document.getElementById("lightbox").style.display="none";
 
-// }
+}
 
-// document.getElementById("lightbox").onclick=function(e){
+document.getElementById("lightbox").onclick=function(e){
 
-//     if(e.target==this){
+    if(e.target==this){
 
-//         this.style.display="none";
+        this.style.display="none";
 
-//     }
+    }
 
-// }
+}
 
 //================ Sarpanch & Members popup box =================//
 
